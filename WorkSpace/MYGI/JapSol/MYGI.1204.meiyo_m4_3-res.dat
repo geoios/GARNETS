@@ -1,0 +1,44 @@
+[Obs-parameter] 
+ Site_name   = MYGI
+ Campaign    = 1204.meiyo_m4
+ Date(UTC)   = 2012-04-22
+ Date(jday)  = 2012-113
+ Ref.Frame   = ITRF2008
+ SoundSpeed  = ./obsdata/MYGI/MYGI.1204.meiyo_m4-svp.csv
+
+[Data-file]
+ datacsv     = demo_prep/mygi3/MYGI.1204.meiyo_m4-obs.csv
+ N_shot      =  1275
+ used_shot   =  1273
+
+[Site-parameter]
+ Latitude0   =  38.08333333
+ Longitude0  = 142.91666667
+ Height0     =  30.00
+ Stations    = M01 M03 M04 M05 M12 M13 M14 M15
+# Array_cent :   'cntpos_E'  'cntpos_N'  'cntpos_U'
+ Center_ENU  =     -0.2806    -43.0971  -1669.8868
+
+[Model-parameter]
+# MT_Pos     :   'stapos_E'  'stapos_N'  'stapos_U'   'sigma_E'   'sigma_N'   'sigma_U'   'cov_NU'    'cov_UE'    'cov_EN'
+ M01_dPos    =     49.0939    854.2954  -1659.5236      0.0256      0.0274      0.0279  -2.762e-05   2.823e-05  -1.266e-05
+ M03_dPos    =     16.2031   -791.6052  -1674.0244      0.0265      0.0266      0.0260  -2.831e-05  -1.948e-05  -2.061e-05
+ M04_dPos    =   -814.6696     -1.3311  -1667.0054      0.0274      0.0263      0.0272  -2.333e-05   2.345e-05  -1.142e-05
+ M05_dPos    =    854.9292    -33.8979  -1678.0970      0.0275      0.0268      0.0273   3.681e-05  -5.291e-05  -2.670e-05
+ M12_dPos    =    788.2825   -199.4154  -1676.7522      0.0272      0.0270      0.0263   2.745e-05  -2.898e-05  -3.537e-05
+ M13_dPos    =    -31.5512   -932.6079  -1675.6294      0.0270      0.0291      0.0285   3.514e-05  -2.428e-05  -2.881e-05
+ M14_dPos    =   -860.2025   -138.4379  -1668.3870      0.0282      0.0263      0.0281  -9.946e-06   6.171e-05   2.596e-06
+ M15_dPos    =     -4.3301    898.2237  -1659.6750      0.0261      0.0279      0.0287  -6.384e-05   3.723e-05  -2.033e-05
+ dCentPos    =      0.0000      0.0000      0.0000      0.0000      0.0000      0.0000   0.000e+00   0.000e+00   0.000e+00
+# ANT_to_TD  :    'forward' 'rightward'  'downward'   'sigma_F'   'sigma_R'   'sigma_D'   'cov_RD'    'cov_DF'    'cov_FR'
+ ATDoffset   =      1.9452     -0.7653     21.3339      0.0000      0.0000      0.0000   0.000e+00   0.000e+00   0.000e+00
+
+#Inversion-type 2 Loop  1- 1, RMS(TT) =   0.089308 ms, used_shot =  99.8%, reject =    2, Max(dX) =     4.7638, Hgt =  -1669.889
+#Inversion-type 2 Loop  1- 2, RMS(TT) =   0.089267 ms, used_shot =  99.8%, reject =    2, Max(dX) =     0.0553, Hgt =  -1669.887
+#Inversion-type 2 Loop  1- 3, RMS(TT) =   0.089267 ms, used_shot =  99.8%, reject =    2, Max(dX) =     0.0001, Hgt =  -1669.887
+#Inversion-type 2 Loop  1- 4, RMS(TT) =   0.089267 ms, used_shot =  99.8%, reject =    2, Max(dX) =     0.0001, Hgt =  -1669.887
+#  ABIC =        8564.510774  misfit =  0.037 
+# lambda_0^2 =   0.10000000
+# lambda_g^2 =   0.01000000
+# mu_t =   0.00000000 sec.
+# mu_MT = 0.5000
